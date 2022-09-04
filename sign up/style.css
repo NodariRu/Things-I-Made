@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Rubik+Dirt&family=Rubik+Moonrocks&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Hind Madurai", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  margin-bottom: 50px;
+  font-size: 35px;
+  text-transform: capitalize;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gray;
+}
+i {
+  color: gray;
+}
+.card {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px rgba(145, 145, 145, 0.303);
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 270px;
+  height: 50px;
+  border: none;
+  margin: 20px 0;
+  border-radius: 20px;
+  padding-left: 50px;
+  box-shadow: inset 4px 4px 10px rgb(203 203 203 / 90%);
+}
+input:focus {
+  outline: none;
+}
+
+#sign-up {
+  width: 270px;
+  height: 45px;
+  background-color: #05c8c0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  box-shadow: 1px 2px 1px rgb(124, 124, 124);
+  position: relative;
+  overflow: hidden;
+}
+#sign-up::before {
+  position: absolute;
+  content: "";
+  top: -30%;
+  left: -10%;
+  height: 200%;
+  width: 8%;
+  transform: rotate(-30deg);
+  background-color: rgba(240, 248, 255, 0.313);
+  transition: 0.3s;
+}
+#sign-up:hover::before {
+  left: 100%;
+}
+#sign-up:hover {
+  transform: translateY(1px) translateX(1px);
+  box-shadow: none;
+}
+#forgot-password {
+  margin-top: 30px;
+}
+.email {
+  position: relative;
+}
+.email > i {
+  position: absolute;
+  bottom: 40%;
+  left: 10px;
+}
+.password {
+  position: relative;
+}
+.password > i {
+  position: absolute;
+  bottom: 40%;
+  left: 10px;
+}
+#forgot-password {
+  text-transform: capitalize;
+  margin-top: 50px;
+}
